@@ -1,0 +1,28 @@
+version: '3.9'
+services:
+    app:
+      image: 'exchange-project:latest'
+      build:
+        context: .
+      container_name: app
+      depends_on:
+        - db
+      environment:
+        - POSTGRES_USER=user
+        - POSTGRES_PASSWORD=user
+        - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/exchange
+        - SPRING_DATASOURCE_USERNAME=user
+        - SPRING_DATASOURCE_PASSWORD=user
+        - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+
+      ports:
+        - "8080:8080"
+    db:
+      image: postgres
+      container_name: db
+      environment:
+        - POSTGRES_PASSWORD=user
+        - POSTGRES_USER=user
+        - POSTGRES_DB=exchange
+      ports:
+        - 5432:5432
