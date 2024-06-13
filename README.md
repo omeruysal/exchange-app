@@ -2,6 +2,11 @@
 Exchange project aims that users can do BUY and SELL operations after getting authenticated. The Exchange project is containerized. There is docker compose file in the root directory which helps you to run both Exchnage project and database services together.
 Unit tests are under the test folder.
 
+## Note:
+To be able to sell or buy any share you need to be logged in first. If you use the postman collection which attached to the repo, you would not need to grab the token and add it to header. Test script handles it automatically. You just need to be logged in with one of these users below, then execute sell or buy post requests.
+username : omer@outlook.com passowrd: 12345
+username : ismail@outlook.com password: 12345
+
 ## Includes:
 Java, Spring boot, Spring security, Docker, Postgres
 
