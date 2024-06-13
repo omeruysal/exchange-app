@@ -28,6 +28,8 @@ Example response:
     "token": "eyJhbGciOiJIUzI1...."
 }
 
+
+
 HTTP Request type : POST
 Endpoint : localhost:8080/exchange/v1/buy
 Example paylod:
@@ -38,6 +40,8 @@ Example paylod:
 
 Example response:
 Buy operation is successfully.
+
+
 
 HTTP Request type : POST
 Endpoint : localhost:8080/exchange/v1/sell
