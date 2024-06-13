@@ -32,7 +32,9 @@ Example response:
 
 HTTP Request type : POST
 Endpoint : localhost:8080/exchange/v1/buy
+
 Example paylod:
+
 {
     "quantity" : 1,
     "shareId" : 1
